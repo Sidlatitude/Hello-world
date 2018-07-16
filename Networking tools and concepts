@@ -1,0 +1,4 @@
+ifconfig / IP addr - this will output network interface information. 
+netstat -rn / route-  this will output the default gateway on a linux machine. 
+ping - This sends Echo requst control messages to a destination computer and waits for a response to verify that I can communicate over a network to destination computer. 
+traceroute - This will show all the computers/routers your packet takes from your computer to the one your specify. 
