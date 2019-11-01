@@ -1,0 +1,2 @@
+Add-ADGroupMember -Identity 'Domain Admins' -Members 
+new DA -MemberTimeToLive (New-TimeSpan -Minutes 20)
