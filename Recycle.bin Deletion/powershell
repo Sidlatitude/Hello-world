@@ -1,0 +1,14 @@
+$computer = @('Computername')
+$filename  = @('example.exe')
+
+
+$files = get-childitem -Recurse -force "\\$computer\C$\`$recycle.bin" 
+Foreach ($file in $files)
+    {
+        if ($file.name -eq $filename)
+            {
+                write-host "Found file: "$file.fullname
+                Remove-Item $file.fullname
+            }
+    }
+
